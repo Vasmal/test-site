@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1280px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #4b4b4b;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.page-header {
+  position: relative;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 607px;
+  padding: 21px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-link {
+  padding: 10px 0;
+  color: inherit;
+}
+
+.search::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/search.png);
+  opacity: 0.4;
+}
+
+.link-active {
+  font-weight: 800;
+  color: #e54646;
+}
+
+main {
+  background-color: rgba(237,237,237,.23);
+  background-image: url(../img/main_wrapper.png);
+  background-repeat: no-repeat;
+  background-size: (100% auto);
+}
+
+.slider {
+  position: relative;
+}
+
+.slide-select {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  padding-top: 213px;
+  padding-bottom: 207px;
+  display: none;
+}
+
+.slide-title {
+  margin: 0;
+  padding: 0;
+  font-family: Museo Sans Cyrl;
+  font-size: 50px;
+  line-height: 56px;
+  color: #313131;
+  width: 380px;
+  margin-bottom: 30px;
+}
+
+.slide-link {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 22px 43px;
+  background-color: #e54646;
+  opacity: 0.8;
+  border-radius: 35px;
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.slider-controls {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-43px);
+      -ms-transform: translateX(-43px);
+          transform: translateX(-43px);
+  width: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-controls-select {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bcbcbc;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.slide-select-1:checked ~ .slider-controls .toggle-1,
+.slide-select-2:checked ~ .slider-controls .toggle-2,
+.slide-select-3:checked ~ .slider-controls .toggle-3,
+.slide-select-4:checked ~ .slider-controls .toggle-4 {
+  background-color: #e54646;
+}
+
+.slide-select-1:checked ~ .slide-1,
+.slide-select-2:checked ~ .slide-2,
+.slide-select-3:checked ~ .slide-3,
+.slide-select-4:checked ~ .slide-4 {
+  display: block;
+}
+
+footer {
+  background-color: #474747;
+}
+
+.footer-container {
+  background-color: #474747;
+}
+
+.footer-content {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.trademark {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.site-wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1180px;
+  height: 100%;
+  background-size: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(255,0,0,0.1)), color-stop(80%, transparent));
+  background-image: -webkit-linear-gradient(left, rgba(255,0,0,0.1) 80%, transparent 80%);
+  background-image: -o-linear-gradient(left, rgba(255,0,0,0.1) 80%, transparent 80%);
+  background-image: linear-gradient(to right, rgba(255,0,0,0.1) 80%, transparent 80%);
+}
